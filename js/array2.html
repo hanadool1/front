@@ -36,11 +36,24 @@
         'forEach': function(fn) {
         },
         'filter' : function(fn) {
+            const temp = [];
+            for(let i=0; i<this.length; i++) {
+                if(fn(this[i])) {
+                    temp.push(this[i]);
+                }
+            }
+            return temp;
         },
         'reduce' : function(fn) {
         }
     };
+    const myArrFilter = myArr.filter(fn);
+    console.log('myArrFilter: ',myArrFilter);
+    
     const myArrResult = myArr.map(fn2);
     console.log('myArrResult: ', myArrResult);
+
+    const arr2 = myArr.filter(item => item <= 20);
+    console.log('arr2 : ',arr2)
     </script>
 </html>

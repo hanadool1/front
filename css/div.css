@@ -1,0 +1,8 @@
+body { padding-top: 20px; }
+div { border: 10px solid #73AD21; width: 100px; left: 20px;}
+div.static { position: static; }
+div.relative { position: relative; border-color:#4221ad; }
+div.fixed { position: fixed; border-color: #f89a9a; top: 0; left: 0;}
+div.relative2 { box-sizing: border-box; position: relative; width: 200px; height: 200px; }
+div.absolute { position: absolute; bottom: 0; left: auto; right: 0; border-color: rgb(103, 3, 3)}
+div.sticky { position: sticky; top: 0; left: 250px; box-sizing: border-box; }

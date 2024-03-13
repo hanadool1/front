@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 선택자  
+        1. 태그 선택자
+        2. 클래스 선택자
+        3. 아이디 선택자        
+        */
+        div { }
+        .cls { background-color: bisque !important; color: red; }
+    </style>
+    <link rel="stylesheet" href="/css/common.css">   
+    <link rel="stylesheet" href="/css/hello/hello.css">
+    <link rel="stylesheet" href="/basic.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        CSS 특징
+        1. 우선순위 싸움 > 더 자세할수록 우선 순위가 높다.
+        2. 캐스케이딩 유무
+
+        CSS 작성 위치 3곳
+        1. 인라인 스타일 - 태그에 직접 작성 (style 속성에 입력)
+        2. html파일 head태그 안에 style태그 안에 작성
+        3. *** 외부 css파일을 만들어서 import하여 사용 ***
+    -->
+
+    <div class="cls" style="width:20px; height:20px; background-color: blue;"></div>
+    <hr>
+    <div class="cls cls2 hi">
+        <div>
+            <div>
+                <span>span</span>                
+            </div>
+        </div>
+        <div>
+            dddd
+        </div>
+    </div>
+    <div class="">B</div>
+    <div class="cls">C</div>
+    <a href="">네이버</a>
+</body class="">
+</html>
