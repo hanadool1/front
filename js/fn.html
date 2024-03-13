@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function sum(n1, n2) {
+            console.log(n1 + n2);
+        }
+        sum(10, 20);
+        sum(20, 40);
+        sum(30, 50, 70);
+        sum(30);
+        //undefined, null
+
+        let sum2 = sum;
+        sum2(10, 20);
+
+        const sum3 = function(n1, n2) {
+            console.log('익명:', n1 + n2);
+        }
+        sum3(10, 20);
+
+        //-----------------
+        const sum4 = (n1, n2) => console.log('ES6:', n1 + n2);
+        sum4(10, 20);
+    </script>
+</body>
+</html>

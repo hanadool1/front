@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoisting</title>
+</head>
+<body>
+    <script>
+        // ES5에만 있는 문제
+        sum(10, 20);        
+        
+        function sum(n1, n2) {
+            //console.log(n1, '+', n2, ':', n1 + n2);
+            console.log(`${n1} + ${n2} =`, n1 + n2);
+        }
+
+        function sum(n1, n2, n3) {
+            console.log('두번째 sum 함수');
+        }
+
+        console.log('a: ', a);
+        var a = 10;
+        
+        //console.log('b: ', b);
+        let b = 10;        
+    </script>
+</body>
+</html>
